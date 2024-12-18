@@ -2,7 +2,7 @@
   "name": "nextjs-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sanjeetkumaritoutlook.github.io/nextjs-app/"
+  "homepage": "https://sanjeetkumaritoutlook.github.io/nextjs-app/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
