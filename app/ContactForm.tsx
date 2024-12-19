@@ -56,6 +56,7 @@ const ContactForm = () => {
       } finally {
         // Reset loading state and form data
         setIsSubmitting(false);
+        console.log(isSubmitting,submitError);
         if (submitSuccess) {
           setFormData({
             name: '',
