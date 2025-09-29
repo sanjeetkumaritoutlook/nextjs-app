@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Bot, Loader, MessageSquare, Send, User, X } from 'lucide-react';
 import { Button } from './../ui/button';
 import { Input } from './../ui/input';
-import { resumeChatbot } from './../../ai/flows/resume-chatbot';
+//import { resumeChatbot } from './../../ai/flows/resume-chatbot';
 import { ScrollArea } from './../ui/scroll-area';
 import { Avatar, AvatarFallback } from './../ui/avatar';
 import { cn } from './../../lib/utils';
@@ -52,7 +52,11 @@ export default function ChatbotWidget() {
     setIsLoading(true);
 
     try {
-      const result = await resumeChatbot({ query: input });
+      // For local testing or when you want to avoid calling the real function,
+      // use an inline mocked resolved promise. This preserves async behavior
+      // so the UI (loading state, try/catch, etc.) behaves the same.
+      // Original call: // const result = await resumeChatbot({ query: input });
+      const result = await Promise.resolve({ response: 'This is a mocked response.' });
       const botMessage: Message = { role: 'bot', text: result.response };
       setMessages((prev) => [...prev, botMessage]);
     } catch {
