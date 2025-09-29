@@ -1,6 +1,7 @@
 //import Image from "next/image";
 
 import Link from 'next/link'; // Import the Link component
+import ChatbotWidget from './components/chatbot/chatbot-widget';
 
 export default function Home() {
   return (
@@ -109,6 +110,7 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+     <ChatbotWidget />
     </div>
   );
 }
