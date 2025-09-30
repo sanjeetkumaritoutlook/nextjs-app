@@ -20,6 +20,22 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+
+## deployed on vercel
+
+branch for-vercel deployed on https://nextjs-app-pearl-nu.vercel.app/nextjs-app
+
+process.env.GOOGLE_API_KEY is only available on the server (not in browser).
+
+Since GitHub Pages only supports static hosting (HTML/CSS/JS files), you must run your app in static export mode locally too.
+
+👉 If you want to stay on GitHub Pages: you must remove "use server" and run everything client-side. But then your Google API key will be public (needs restrictions).
+
+👉 If you want to keep server-only logic and private API keys: move to Vercel/Netlify or use your NestJS proxy as a backend.
+
+"use server"; -> That turns the file into a Server Action file — which cannot be statically exported. GitHub Pages only works with pure static assets (HTML, JS, CSS). No Node.js runtime, no Server Actions.
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
