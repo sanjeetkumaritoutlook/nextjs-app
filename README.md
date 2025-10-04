@@ -35,7 +35,13 @@ Since GitHub Pages only supports static hosting (HTML/CSS/JS files), you must ru
 
 "use server"; -> That turns the file into a Server Action file — which cannot be statically exported. GitHub Pages only works with pure static assets (HTML, JS, CSS). No Node.js runtime, no Server Actions.
 
+```
+import {genkit} from 'genkit';
+import { googleAI } from '@genkit-ai/google-genai';
+```
+https://github.com/angular/examples/tree/main/genkit-angular-starter-kit
 
+https://github.com/angular/examples/tree/main/genkit-angular-story-generator
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

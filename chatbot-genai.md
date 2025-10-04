@@ -21,6 +21,15 @@ https://github.com/pacocoursey/next-themes/issues/247
 
 https://github.com/shadcn-ui/ui/issues/5706
 
+
+```
+import {genkit} from 'genkit';
+import { googleAI } from '@genkit-ai/google-genai';
+```
+https://github.com/angular/examples/tree/main/genkit-angular-starter-kit
+
+https://github.com/angular/examples/tree/main/genkit-angular-story-generator
+
 ## ⚡ Analogy:
 
 GitHub Pages = a USB stick 📀 that only stores your files.
